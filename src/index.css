@@ -41,5 +41,12 @@ nav {
   padding: 1rem;
 }
 
+@media (min-width: 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
+
 .cart-quantity {
 }
