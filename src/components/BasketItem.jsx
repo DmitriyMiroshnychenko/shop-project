@@ -5,7 +5,7 @@ function BasketItem(props) {
     <li className="collection-item">
       {name} x{quantity} = {price}
       <span class="secondary-content">
-        <i class="material-icons">close</i>
+        <i class="material-icons basket-delete">close</i>
       </span>
     </li>
   );
