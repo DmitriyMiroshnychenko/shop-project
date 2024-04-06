@@ -5,7 +5,7 @@ function Footer() {
         <div className="container">
           ⓒ{new Date().getFullYear()} Copyright Text by Dmytro Miroshnychenko
           <a className="grey-text text-lighten-4 right" href="#!">
-            Repo
+            Nice
           </a>
         </div>
       </div>
