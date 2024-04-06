@@ -29,7 +29,7 @@ function Shop() {
             quantity: orderItem.quntity + 1,
           };
         } else {
-          return item;
+          return orderItem;
         }
       });
       setOrder(newOrder);
