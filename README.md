@@ -1,3 +1,3 @@
 # React Shop Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/DmitriyMiroshnychenko/shop-project)).
+This project was bootstrapped with [Create React App](https:///DmitriyMiroshnychenko/.github.io/shop-project)).
