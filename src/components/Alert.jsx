@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 
 function Alert(props) {
-  const { name } = props;
+  const { name = '', closeAlert = Function.prototype } = props;
 
   useEffect(() => {
-    const timerId = setTimeout();
+    const timerId = setTimeout(closeAlert, 3000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
   }, [name]);
   return (
     <div id="toast-container">
@@ -12,3 +16,5 @@ function Alert(props) {
     </div>
   );
 }
+
+export { Alert };
