@@ -28,7 +28,7 @@ function Shop() {
         if (index === itemIndex) {
           return {
             ...orderItem,
-            quantity: orderItem.quntity + 1,
+            quantity: orderItem.quantity + 1,
           };
         } else {
           return orderItem;
