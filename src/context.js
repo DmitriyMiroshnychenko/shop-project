@@ -18,6 +18,10 @@ export const ContextProvider = ({ Children }) => {
     dispatch({ type: 'CLOSE_ALERT' });
   };
 
+  value.addToBasket = (item) => {
+    dispatch({ type: 'ADD_TO_BASKET', payload: { id: item } });
+  };
+
   value.removeFromBasket = (itemId) => {
     dispatch({ type: 'REMOVE_FROM_BASKET', payload: { id: itemId } });
   };
