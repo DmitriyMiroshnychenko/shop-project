@@ -33,9 +33,10 @@ export const ContextProvider = ({ Children }) => {
   value.removeFromBasket = (itemId) => {
     dispatch({ type: 'REMOVE_FROM_BASKET', payload: { id: itemId } });
   };
-  //const value = {
-  // example: 'hello from context',
-  //};
+
+  value.handleBasketShow = () => {
+    dispatch({ type: 'TOGGLE_BASKET' });
+  };
 
   return <ShopContext.Provider value={value}>{Children}</ShopContext.Provider>;
 };
