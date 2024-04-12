@@ -22,6 +22,14 @@ export const ContextProvider = ({ Children }) => {
     dispatch({ type: 'ADD_TO_BASKET', payload: { id: item } });
   };
 
+  value.incQuantity = (itemId) => {
+    dispatch({ type: 'INCREMENT_QUANTITY', payload: { id: itemId } });
+  };
+
+  value.decQuantity = (itemId) => {
+    dispatch({ type: 'DECREMENT_QUANTITY', payload: { id: itemId } });
+  };
+
   value.removeFromBasket = (itemId) => {
     dispatch({ type: 'REMOVE_FROM_BASKET', payload: { id: itemId } });
   };
