@@ -35,6 +35,14 @@ export function reducer(state, { type, payload }) {
         ...state,
         order: state.order.filter((el) => el.id !== payload.id),
       };
+    case 'INCREMENT_QUANTITY':
+      return {
+        ...state,
+      };
+    case 'DECREMENT_QUANTITY':
+      return {
+        ...state,
+      };
     case 'CLOSE_ALERT':
       return {
         ...state,
