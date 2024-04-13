@@ -19,7 +19,7 @@ export const ContextProvider = ({ Children }) => {
   };
 
   value.addToBasket = (item) => {
-    dispatch({ type: 'ADD_TO_BASKET', payload: { id: item } });
+    dispatch({ type: 'ADD_TO_BASKET', payload: item });
   };
 
   value.incQuantity = (itemId) => {
