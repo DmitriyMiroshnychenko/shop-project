@@ -10,7 +10,7 @@ import { BasketList } from './BasketList';
 import { Alert } from './Alert';
 
 function Shop() {
-  const { goods, loading, order, isBasketShow, alertName, setGoods } =
+  const { loading, order, isBasketShow, alertName, setGoods } =
     useContext(ShopContext);
 
   useEffect(function getGoods() {
@@ -23,6 +23,7 @@ function Shop() {
       .then((data) => {
         setGoods(data.featured);
       });
+    //eslint-disable-next-line
   }, []);
 
   return (
